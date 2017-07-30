@@ -18,12 +18,6 @@ for (i = 0; i < urls.length; i++){
 };
 // end
 
-function printData(){
-    dataList.forEach((item) => {
-        console.log(item);
-    });
-};
-
 // this function uses input values of i to describe unique ordering 
 // intergers for each call
 function dataCount(url, count) {
@@ -50,4 +44,10 @@ function dataCount(url, count) {
             };
         });
     }).on("error", console.error);
+};
+
+function printData(){
+    dataList.forEach((item) => {
+        console.log(item);
+    });
 };
